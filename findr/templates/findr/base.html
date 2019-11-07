@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Findr</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <div class="user-info">
+                {% if user.is_authenticated %} Welcome, {{ user.username }}
+                <a href="{% url 'logout' %}">Log out</a>
+                {% else %}
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'signup' %}">Signup</a>
+                {% endif %}
+              </div>
+    <nav>
+            
+        <h1>BadBelly</h1>
+        <a href="/recipes">Recipes</a>
+        <a href="/restrictions">Restrictions</a>
+        <a href="/restaurants">Restaurants</a>
+        
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>

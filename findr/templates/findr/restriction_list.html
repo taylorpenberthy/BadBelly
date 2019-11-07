@@ -1,0 +1,19 @@
+
+{% extends 'findr/base.html' %} {% block content %}
+<h2>Restrictions</h2>
+<p><a href="{% url 'restriction_create' %}">Create</a></p>
+<div class='recipePage'>
+<ul>
+  {% for restriction in restrictions %}
+  <div class="recipeIndiv">
+  <li>
+  
+        <a href="{% url 'restriction_detail' pk=restriction.pk %}">
+        {{ restriction.name }}
+      </a>
+  </li>
+</div>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

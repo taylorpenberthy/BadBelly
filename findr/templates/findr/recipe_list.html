@@ -1,0 +1,20 @@
+
+{% extends 'findr/base.html' %} 
+{% block content %}
+<h2>Recipes</h2>
+<p><a href="{% url 'recipe_create' %}">Add new </a></p>
+<div class='recipePage'>
+<ul>
+  {% for recipe in recipes %}
+  <div class="recipeIndiv">
+  <li>
+       
+        <a href="{% url 'recipe_detail' pk=recipe.pk %}">
+        {{ recipe.title }}
+      </a>
+  </li>
+</div>
+  {% endfor %}
+</ul>
+</div>
+{% endblock %}

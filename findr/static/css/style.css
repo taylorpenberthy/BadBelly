@@ -1,0 +1,104 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: #3a4660;
+}
+
+nav a {
+    padding: 30px;
+}
+.recipePage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.recipeIndiv {
+    display: flex;
+   flex-direction: row;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid #845007;
+    text-align: center;
+    width: 15%;
+    
+}
+
+.recipeIndiv:hover {
+    background-color: #ed8a63;
+}
+
+nav {
+    text-align: center;
+
+}
+
+body {
+   /* background-image: linear-gradient(#333533, #242423);
+    background-image: linear-gradient(#EEE0CB, #DCAE96);
+   */
+    background-color: #c9af98; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2 {
+    color: #845007;
+    
+}
+.image {
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: #3a4660;
+}
+
+h4 {
+    font-style: italic;
+    
+}
+
+.restrictionName {
+    margin-left: 30px;
+}
+
+.showRest {
+    margin-left: 30px;
+}
+
+.restrictionInfo {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 40px;
+    position: relative;
+    color: white;
+}
+
+.user-info {
+    text-align: left;
+    margin-left: 0;
+}
+
+.hero {
+    background-color: white;
+    
+}
+
+.restrictionName, .restrictionInfoo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

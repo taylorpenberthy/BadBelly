@@ -1,0 +1,9 @@
+{% extends 'findr/base.html' %}
+{% block content %}
+<h2>{{recipe.title}}</h2>
+<p><a href="{% url 'recipe_delete' pk=recipe.pk %}">Delete Recipe</a></p>
+<p><a href="{% url 'recipe_edit' pk=recipe.pk %}">Edit Recipe</a></p>
+<h4>Good for people with: {{recipe.restriction}}</h4>
+<p>Ingredients: {{recipe.ingredients}}, 
+    <br />Instructions: {{recipe.instructions}}</p>
+{% endblock %}

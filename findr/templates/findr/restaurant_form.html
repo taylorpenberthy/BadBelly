@@ -1,0 +1,7 @@
+{% extends 'findr/base.html' %}{% block content %}
+<h1>New Restaurant</h1>
+<form method="POST" class="recipe-form">
+    {% csrf_token %} {{ form.as_p }}
+    <button type='submit'>Save</button>
+</form>
+{% endblock %}

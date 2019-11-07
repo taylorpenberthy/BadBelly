@@ -1,0 +1,26 @@
+{% extends 'findr/base.html' %}
+{% block content %}
+<div class="showRest">
+    <div class="hero">
+    <div class="restrictionInfo">
+        <h2 class="restrictionName">{{restriction.name}}<a href="{% url 'restriction_edit' pk=restriction.pk %}"> (edit)</a></h2>
+   
+        <h4 class="restrictionInfoo">{{restriction.description}}</h4>
+        <img src="{{restriction.image_url}}" class='image'/>
+    </div>
+</div>
+<p>Recipes: <a href="{% url 'recipe_create' %}">(+)</a></p>
+<div class="recipePage">
+<ul>
+    
+    {% for recipe in restriction.recipe.all %}
+    <div class="recipeIndiv">
+    <li>
+        <a href="{% url 'recipe_detail' pk=recipe.pk %}">{{recipe.title}}</a>
+    </li>
+</div>
+    {% endfor %}
+</ul>
+</div>
+</div>
+{% endblock %}
