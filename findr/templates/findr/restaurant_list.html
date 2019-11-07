@@ -2,7 +2,7 @@
 {% extends 'findr/base.html' %} 
 {% block content %}
 <h2>Restaurants</h2>
-<p><a href="">Add new </a></p>
+<p><a href="{% url 'restaurant_create' %}">Add new </a></p>
 <div class='recipePage'>
 <ul>
   {% for restaurant in restaurants %}

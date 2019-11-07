@@ -39,7 +39,15 @@ nav a {
 
 nav {
     text-align: center;
+    background-color: #3a4660;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
 
+
+.badbelly {
+    font-size: 40px;
 }
 
 body {
@@ -61,7 +69,8 @@ h1, h2 {
 }
 a {
     text-decoration: none;
-    color: #3a4660;
+    color: #ed8a63;
+    padding-bottom: 40px;
 }
 
 h4 {
@@ -77,28 +86,43 @@ h4 {
     margin-left: 30px;
 }
 
+
 .restrictionInfo {
     text-align: center;
     margin-left: 30px;
     margin-right: 40px;
     position: relative;
-    color: white;
 }
 
+.image {
+   
+}
 .user-info {
     text-align: left;
     margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: #ed8a63;
 }
 
+p a{
+    color: #3a4660;
+}
 .hero {
-    background-color: white;
+    margin-top: 20px;
+   
+    margin-left: 0;
     
 }
 
-.restrictionName, .restrictionInfoo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.restaurantdeets {
+    text-align: center;
+    margin-top: 100px;
 }
 
+
+
+
+.showRestrict {
+    margin-left: 0;
+}
