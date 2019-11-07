@@ -6,12 +6,13 @@
 <ul>
   {% for restriction in restrictions %}
   <div class="recipeIndiv">
+        <a href="{% url 'restriction_detail' pk=restriction.pk %}" class='restrictname'>
+      <div class='anotha1'>
   <li>
-  
-        <a href="{% url 'restriction_detail' pk=restriction.pk %}">
         {{ restriction.name }}
       </a>
   </li>
+</div>
 </div>
   {% endfor %}
 </ul>

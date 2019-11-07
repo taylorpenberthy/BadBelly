@@ -14,4 +14,4 @@ class RecipeForm(forms.ModelForm):
 class RestaurantForm(forms.ModelForm):
     class Meta: 
         model = Restaurant
-        fields = ('name', 'location', 'cuisine', 'restriction', )
+        fields = ('name', 'location', 'cuisine', 'restriction',  )

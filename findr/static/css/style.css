@@ -27,16 +27,33 @@ nav a {
    flex-direction: row;
     padding: 30px;
     margin: 10px;
+    box-shadow: 1px 1px 1px 1px #3a4660;
     border: 1px solid #845007;
     text-align: center;
     width: 15%;
-    
 }
-
+li {
+    text-align: center;
+}
+.restrictname {
+    text-align: center;
+}
 .recipeIndiv:hover {
     background-color: #ed8a63;
 }
 
+.noorange {
+    color: #3a4660
+}
+
+.about {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:20px;   /* Height of the footer */
+   background-color: #3a4660;
+   color: #ed8a63;
+}
 nav {
     text-align: center;
     background-color: #3a4660;
@@ -48,19 +65,23 @@ nav {
 
 .badbelly {
     font-size: 40px;
+    text-shadow: 1px 1px #ed8a63;
+    letter-spacing: 0.1em;
 }
 
 body {
-   /* background-image: linear-gradient(#333533, #242423);
-    background-image: linear-gradient(#EEE0CB, #DCAE96);
-   */
     background-color: #c9af98; 
+    padding-bottom:60px;
     font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2 {
     color: #845007;
-    
+    text-shadow: 0.5px 0.5px #845007;
+}
+
+footer {
+    padding-top: 300px;
 }
 .image {
     text-align: center;
@@ -125,4 +146,10 @@ p a{
 
 .showRestrict {
     margin-left: 0;
+}
+
+.anotha1 {
+    padding: 10px;
+    background-color: #ECD9BA;
+    
 }
