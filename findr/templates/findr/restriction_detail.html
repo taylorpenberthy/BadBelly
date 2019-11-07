@@ -21,6 +21,19 @@
 </div>
     {% endfor %}
 </ul>
+
+</div>
+<p>Restaurants: <a href="{% url 'restaurant_create' %}">(+)</a></p></p>
+<div class="recipePage">
+    <ul>
+        {% for restaurant in restriction.restaurant.all %}
+        <div class="recipeIndiv">
+            <li>
+                <a href="{% url 'restaurant_detail' pk=restaurant.pk %}">{{restaurant.name}}</a>
+            </li>
+        </div>
+        {% endfor %}
+    </ul>
 </div>
 </div>
 {% endblock %}
